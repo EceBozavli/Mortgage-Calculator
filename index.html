@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Calculator Program</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/mortgage.css">
+  <script src="assets/js/mortgage.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="container-inner">
+      <div class="header">
+        <h3 class="baslık">Mortgage Calculator</h3>
+        <a href="#" class="delBtn">Clear All</a>
+      </div>
+  
+      <div class="inputVariables">
+        <div class="amount">
+          <p>Mortgage Amount</p>
+          <input type="text" class="mortgageAmount" placeholder="£">
+        </div>
+        <div class="term">
+          <p>Mortgage Term</p>
+          <input type="text" class="mortgageTerm" placeholder="years">
+        </div>
+        <div class="rate">
+          <p>Interest Rate</p>
+          <input type="text" class="interestRate" placeholder="%">  
+        </div>
+        <div class="mortgageType">
+          <h3>Mortgage Type</h3>
+          <input type="button" value="Repayment" class="repayment">
+          <br><input type="button" value="Interest Only" class="interestOnly">
+        </div> 
+      </div>
+      
+      <button class="calcBtn"><img src="assets/img/calc-avatar.png" class="avatar" >  Calculate Repayments</button>
+      <div class="results">
+        <div class="resultBefore">
+          <img src="assets/img/calculator.png" alt="calculator" class="calculatorAvatar" >
+          <h4>Results shown here</h4>
+          <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+        </div>
+    
+        <div class="resultsAfter">
+          <h4>Your results</h4>
+          <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+          <div class="inner">
+            <span>Your monthly repayments</span>
+            <p class="monthlyRepayment"></p>
+            <hr>
+            <span>Total you'll repay over the term</span>
+            <p class="totalRepayment"></p>
+          </div>
+        </div>
+
+
+      </div>
+      
+    </div>  
+
+  </div>
+</body>
+</html>
